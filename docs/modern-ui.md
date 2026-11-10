@@ -29,3 +29,15 @@ templates were also checked at 390px width for horizontal overflow, and their
 username fields were checked for keyboard input and panel containment. These are
 visual checks, not authenticated integration tests. Real login, MFA, remote
 desktop, terminal, and file transfer require a configured server and devices.
+
+
+Account group cards, audit rows, user rows, file toolbars and server statistics
+now use the same surfaces and spacing. Default decorative icons and the browser
+favicon use local SVG assets in `public/images/modern`; uploaded profile images
+continue to use their existing URLs. Server warnings remain visible.
+
+Additional validation renders account, events, users, files and server pages in
+both themes for classic and Bootstrap templates. Group cards and server metrics
+use their original rendering functions with fixture data; event/user/file rows
+use representative markup. These checks cover horizontal overflow and visual
+layout, not authenticated operations or chart rendering.

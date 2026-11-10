@@ -14,6 +14,7 @@
     <link type="text/css" href="styles/ol3-contextmenu.min.css" media="screen" rel="stylesheet" title="CSS" />
     <link type="text/css" href="styles/xterm.css" media="screen" rel="stylesheet" title="CSS" />
     <link type="text/css" href="styles/flatpickr.min.css" media="screen" rel="stylesheet" title="CSS">
+    <link rel="icon" type="image/svg+xml" href="images/modern/mark.svg" />
     <link keeplink=1 type="text/css" href="styles/modern.css" media="screen" rel="stylesheet" />
     {{{customCSSTags}}}
     <link rel="apple-touch-icon" href="/favicon-303x303.png" />
@@ -429,7 +430,7 @@
                 <div id="p2title"><h1>My Account</h1></div>
                 <div id="p2info" style="overflow-y:auto">
                     <div id="p2AccountImageFrame">
-                        <img id="p2AccountImage" alt="" width="128" height="128" onclick="account_manageImage(0)" src="images/user-256.png" />
+                        <img id="p2AccountImage" alt="" width="128" height="128" onclick="account_manageImage(0)" src="images/modern/avatar.svg" />
                         <div><a onclick="account_manageImage(0)">Change image</a></div>
                     </div>
                     <div id="p2AccountSecurity" style="display:none">
@@ -590,7 +591,7 @@
             <div id=p6 style="display:none">
                 <div id="p6info" style="overflow-y:auto">
                     <div id="p6title">
-                        <img id=MainMeshImage src="serverpic.ashx">
+                        <div class="mc-server-symbol" aria-hidden="true"></div>
                         <h1>My Server</h1>
                     </div>
                     <div id="p2ServerActions">
@@ -1210,9 +1211,9 @@
                                 <img id="p30userAuthServiceLogo" style="display:none" class=userAuthStrategyLogo width=64 height=64>
                                 <picture id=MainUserImage style="display:none;border-width:0px;height:200px;width:200px;float:right" onclick="account_manageImage(1)">
                                     <source type="image/webp" width=200 height=200 srcset="images/webp/user-256.webp" />
-                                    <img alt="" width=200 height=200 src=images/user-256.png />
+                                    <img alt="" width=200 height=200 src=images/modern/avatar.svg />
                                 </picture>
-                                <img id=MainUserImageEx alt="" width=200 height=200 src=images/user-256.png onclick="account_manageImage(1)" />
+                                <img id=MainUserImageEx alt="" width=200 height=200 src=images/modern/avatar.svg onclick="account_manageImage(1)" />
                                 <div style="width:100%;text-align:center"><strong><span id=MainUserState></span></strong></div>
                             </td>
                         </tr>
@@ -2417,7 +2418,7 @@
                 if (userinfo.accountImageRnd == null) { userinfo.accountImageRnd = Math.floor(Math.random() * 9999999999); }
                 Q('p2AccountImage').src = 'userimage.ashx?rnd=' + userinfo.accountImageRnd;
             } else {
-                Q('p2AccountImage').src = 'images/user-256.png';
+                Q('p2AccountImage').src = 'images/modern/avatar.svg';
             }
 
             // Update user management state
@@ -13179,7 +13180,7 @@
                         }
                     }
                     if (event.etype == 'relay' || event.action == 'relaylog') icon = 'relayIcon16';
-                    x += '<tr onclick=showEventDetails(' + event.h + ',1) onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) style=cursor:pointer><td style=width:18px><div class=' + icon + '></div></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td><td class=g2>&nbsp;</td></tr><tr style=height:2px></tr>';
+                    x += '<tr class=mc-event-row onclick=showEventDetails(' + event.h + ',1) onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) style=cursor:pointer><td style=width:18px><div class=' + icon + '></div></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td><td class=g2>&nbsp;</td></tr><tr style=height:2px></tr>';
                 }
             }
             if (dateHeader != null) x += '</table>';
@@ -14387,7 +14388,7 @@
             if (mode == 1) { arg = '&id=' + user._id.split('/')[2]; }
             var myImg = new Image();
             myImg.onload = function() { ctx.clearRect(0, 0, 256, 256); ctx.drawImage(myImg, 0, 0); };
-            myImg.src = ((user.flags != null) && (user.flags & 1))?('userimage.ashx?rnd=' + user.accountImageRnd + arg):'images/user-256.png';
+            myImg.src = ((user.flags != null) && (user.flags & 1))?('userimage.ashx?rnd=' + user.accountImageRnd + arg):'images/modern/avatar.svg';
             QE('idx_dlgDeleteButton', (user.flags != null) && (user.flags & 1));
             QE('idx_dlgOkButton', false);
         }
@@ -14948,7 +14949,7 @@
                 if (meshrights == 0xFFFFFFFF) rights = "Full Administrator"; else if (meshrights == 0) rights = "No Rights";
 
                 // Print the mesh information
-                r += '<div onmouseover=devGrpMouseHover(this,1) onmouseout=devGrpMouseHover(this,0) style=display:inline-block;width:431px;height:50px;padding-top:1px;padding-bottom:1px;float:left><div style=float:left;width:30px;height:100%></div><div tabindex=0 style=height:100%;cursor:pointer onclick=gotoMesh(\'' + sortedMeshes[i]._id + '\') onkeypress="if (event.key==\'Enter\') gotoMesh(\'' + sortedMeshes[i]._id + '\')"><div class=mi style=float:left;width:50px;height:50px></div><div style=height:100%><div class=g1></div><div class=e2 style=width:300px><div class=e1>' + EscapeHtml(sortedMeshes[i].name) + '</div><div>' + rights + '</div></div><div class=g2 style=float:left></div></div></div></div>';
+                r += '<div class=mc-group-card onmouseover=devGrpMouseHover(this,1) onmouseout=devGrpMouseHover(this,0) style=display:inline-block;width:431px;height:50px;padding-top:1px;padding-bottom:1px;float:left><div style=float:left;width:30px;height:100%></div><div tabindex=0 style=height:100%;cursor:pointer onclick=gotoMesh(\'' + sortedMeshes[i]._id + '\') onkeypress="if (event.key==\'Enter\') gotoMesh(\'' + sortedMeshes[i]._id + '\')"><div class=mi style=float:left;width:50px;height:50px></div><div style=height:100%><div class=g1></div><div class=e2 style=width:300px><div class=e1>' + EscapeHtml(sortedMeshes[i].name) + '</div><div>' + rights + '</div></div><div class=g2 style=float:left></div></div></div></div>';
             }
 
             meshcount = count;
@@ -17068,7 +17069,7 @@
                     }
                     if (event.remoteaddr) { msg += ' (' + EscapeHtml(event.remoteaddr) + ')'; }
                     if (event.etype == 'relay' || event.action == 'relaylog') icon = 'relayIcon16';
-                    x += '<tr onclick=showEventDetails(' + event.h + ',2)  onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) style=cursor:pointer><td style=width:18px><div class=' + icon + '></div></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td><td class=g2>&nbsp;</td></tr><tr style=height:2px></tr>';
+                    x += '<tr class=mc-event-row onclick=showEventDetails(' + event.h + ',2)  onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) style=cursor:pointer><td style=width:18px><div class=' + icon + '></div></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td><td class=g2>&nbsp;</td></tr><tr style=height:2px></tr>';
                 }
             }
             if (dateHeader != null) x += '</table>';
@@ -19020,7 +19021,7 @@
                         msg = '<span title="' + "This is a guest sharing session" + '">' + EscapeHtml(event.guestname) + '</span> &rarr; ' + msg;
                     }
                     if (event.etype == 'relay' || event.action == 'relaylog') icon = 'relayIcon16';
-                    x += '<tr onclick=showEventDetails(' + event.h + ',3)  onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) style=cursor:pointer><td style=width:18px><div class=' + icon + '></div></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td><td class=g2>&nbsp;</td></tr><tr style=height:2px></tr>';
+                    x += '<tr class=mc-event-row onclick=showEventDetails(' + event.h + ',3)  onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) style=cursor:pointer><td style=width:18px><div class=' + icon + '></div></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td><td class=g2>&nbsp;</td></tr><tr style=height:2px></tr>';
                 }
             }
             if (dateHeader != null) x += '</table>';
@@ -19918,7 +19919,7 @@
                 for (var i in message.values) {
                     x += '<div class=userTableHeader style=margin-bottom:4px;width:200px>' + (serverStatsStrings[i]?serverStatsStrings[i]:i) + '</div>';
                     for (var j in message.values[i]) {
-                        x += '<div style=display:inline-block><table class=serverStateTableCell><tr><td class=h1></td><td><span>' + (serverStatsStrings[j]?serverStatsStrings[j]:j) + '</span><span style=float:right>' + message.values[i][j] + '</span></td><td class=h2></td></tr></table></div>';
+                        x += '<div class=mc-stat-cell style=display:inline-block><table class=serverStateTableCell><tr><td class=h1></td><td><span>' + (serverStatsStrings[j]?serverStatsStrings[j]:j) + '</span><span style=float:right>' + message.values[i][j] + '</span></td><td class=h2></td></tr></table></div>';
                     }
                 }
             }

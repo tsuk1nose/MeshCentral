@@ -18,6 +18,7 @@
     <link id="theme-stylesheet" href="styles/bootstrap{{{min}}}.css" rel="stylesheet" title="CSS">
     <link href="styles/select2.min.css" rel="stylesheet" title="CSS">
     <link href="styles/select2-bootstrap-5-theme.min.css" rel="stylesheet" title="CSS">
+    <link rel="icon" type="image/svg+xml" href="images/modern/mark.svg" />
     <link keeplink=1 type="text/css" href="styles/modern.css" media="screen" rel="stylesheet" />
     {{{customCSSTags}}}
     <link rel="apple-touch-icon" href="/favicon-303x303.png" />
@@ -263,7 +264,7 @@
                 <div class="user-menu-container">
                     <div id="userDropdown">
                         <div id="userDropdownButton">
-                            <img id="userDropdownImage" src="images/user-256.png" alt="User" />
+                            <img id="userDropdownImage" src="images/modern/avatar.svg" alt="User" />
                             <span id="userDropdownName" class="LogoffLinkColor"></span>
                             <i class="fa fa-chevron-down LogoffLinkColor" style="font-size: 12px;"></i>
                         </div>
@@ -686,7 +687,7 @@
                 <div id="p2info" style="overflow-y:auto">
                     <div id="p2AccountImageFrame">
                         <img id="p2AccountImage" alt="" width="128" height="128"
-                            onclick="account_manageImage(0)" src="images/user-256.png" />
+                            onclick="account_manageImage(0)" src="images/modern/avatar.svg" />
                         <div><a href=# onclick="account_manageImage(0)">Change image</a></div>
                     </div>
                     <div id="p2AccountSecurity" style="display:none">
@@ -1825,9 +1826,9 @@
                                 style="display:none; border-width:0px; height:200px; width:200px; float:right"
                                 onclick="account_manageImage(1)">
                                 <source type="image/webp" width="200" height="200" srcset="images/webp/user-256.webp" />
-                                <img alt="" width="200" height="200" src="images/user-256.png" />
+                                <img alt="" width="200" height="200" src="images/modern/avatar.svg" />
                             </picture>
-                            <img id="MainUserImageEx" alt="" width="200" height="200" src="images/user-256.png" onclick="account_manageImage(1)" />
+                            <img id="MainUserImageEx" alt="" width="200" height="200" src="images/modern/avatar.svg" onclick="account_manageImage(1)" />
                             <div style="width:100%;text-align:center;">
                                 <strong><span id="MainUserState"></span></strong>
                             </div>
@@ -2987,7 +2988,7 @@
         }
         function updateUserDropdown() {
             if (logoutControls && logoutControls.name) {
-                var userImageSrc = 'images/user-256.png';
+                var userImageSrc = 'images/modern/avatar.svg';
                 if (userinfo && userinfo.flags && (userinfo.flags & 1)) {
                     if (userinfo.accountImageRnd == null) { userinfo.accountImageRnd = Math.floor(Math.random() * 9999999999); }
                     userImageSrc = 'userimage.ashx?rnd=' + userinfo.accountImageRnd;
@@ -3302,7 +3303,7 @@
                 if (userinfo.accountImageRnd == null) { userinfo.accountImageRnd = Math.floor(Math.random() * 9999999999); }
                 Q('p2AccountImage').src = 'userimage.ashx?rnd=' + userinfo.accountImageRnd;
             } else {
-                Q('p2AccountImage').src = 'images/user-256.png';
+                Q('p2AccountImage').src = 'images/modern/avatar.svg';
             }
 
             // Update user management state
@@ -15334,7 +15335,7 @@
                         }
                     }
                     if (event.etype == 'relay' || event.action == 'relaylog') icon = 'fa-arrow-right-arrow-left';
-                    x += '<tr onclick=showEventDetails(' + event.h + ',1) onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) role="button"><td style=width:18px><i class="fa-solid ' + icon + '"></i></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td></tr><tr></tr>';
+                    x += '<tr class=mc-event-row onclick=showEventDetails(' + event.h + ',1) onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) role="button"><td style=width:18px><i class="fa-solid ' + icon + '"></i></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td></tr><tr></tr>';
                 }
             }
             if (dateHeader != null) x += '</table>';
@@ -16548,7 +16549,7 @@
             if (mode == 1) { arg = '&id=' + user._id.split('/')[2]; }
             var myImg = new Image();
             myImg.onload = function () { ctx.clearRect(0, 0, 256, 256); ctx.drawImage(myImg, 0, 0); };
-            myImg.src = ((user.flags != null) && (user.flags & 1)) ? ('userimage.ashx?rnd=' + user.accountImageRnd + arg) : 'images/user-256.png';
+            myImg.src = ((user.flags != null) && (user.flags & 1)) ? ('userimage.ashx?rnd=' + user.accountImageRnd + arg) : 'images/modern/avatar.svg';
             QE('idx_dlgDeleteButton', (user.flags != null) && (user.flags & 1));
             QV('idx_dlgDeleteButton', (user.flags != null) && (user.flags & 1));
             Q('idx_dlgDeleteButton').onclick = () => account_manageImageEx2(2, user._id);
@@ -19602,7 +19603,7 @@
                     }
                     if (event.remoteaddr) { msg += ' (' + EscapeHtml(event.remoteaddr) + ')'; }
                     if (event.etype == 'relay' || event.action == 'relaylog') icon = 'fa-arrow-right-arrow-left';
-                    x += '<tr onclick=showEventDetails(' + event.h + ',2)  onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) role=button><td style=width:18px><i class="fa-fw fa-solid ' + icon + '"></i></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td></tr><tr></tr>';
+                    x += '<tr class=mc-event-row onclick=showEventDetails(' + event.h + ',2)  onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) role=button><td style=width:18px><i class="fa-fw fa-solid ' + icon + '"></i></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td></tr><tr></tr>';
                 }
             }
             if (dateHeader != null) x += '</table>';
@@ -21825,7 +21826,7 @@
                         msg = '<span title="' + "This is a guest sharing session" + '">' + EscapeHtml(event.guestname) + '</span> &rarr; ' + msg;
                     }
                     if (event.etype == 'relay' || event.action == 'relaylog') icon = 'fa-arrow-right-arrow-left';
-                    x += '<tr onclick=showEventDetails(' + event.h + ',3)  onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) style=cursor:pointer><td style=width:18px><i class="fa-solid ' + icon + '"></i></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td></tr><tr></tr>';
+                    x += '<tr class=mc-event-row onclick=showEventDetails(' + event.h + ',3)  onmouseover=eventMouseHover(this,1) onmouseout=eventMouseHover(this,0) style=cursor:pointer><td style=width:18px><i class="fa-solid ' + icon + '"></i></td><td class=g1>&nbsp;</td><td class=style10>' + printTime(time) + ' - ' + msg + '</td></tr><tr></tr>';
                 }
             }
             if (dateHeader != null) x += '</table>';

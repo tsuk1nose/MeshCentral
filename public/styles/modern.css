@@ -281,3 +281,93 @@ body.mc-console.night a { color: var(--mc-accent); }
 body.mc-console.night #footer a { color: #c8d9f5; }
 body.mc-console.night .mc-device-actions a:first-child { color: white; }
 body.mc-console #devListToolbar :is(input[type="button"], button, select, #SearchInput) { box-sizing: border-box; height: 34px; }
+
+/* Shared inner pages: account, audit log, files, users and server. */
+body.mc-console :is(#p2, #p3, #p4, #p5, #p6) { min-width: 0; }
+body.mc-console :is(.pTable, #p5toolbar) {
+    background: var(--mc-surface); border: 1px solid var(--mc-border);
+    border-radius: 12px; height: auto; border-spacing: 0; margin-bottom: 18px;
+}
+body.mc-console .pTable td, body.mc-console.night .pTable td,
+body.mc-console #p5filehead, body.mc-console #p5filesubhead,
+body.mc-console.night #p5filehead, body.mc-console.night #p5filesubhead {
+    background: transparent; color: var(--mc-text); padding: 12px 8px;
+}
+body.mc-console :is(.pTable, #p5toolbar) :is(button, input[type="button"], input[type="search"], select) {
+    box-sizing: border-box; min-height: 34px; padding: 6px 10px; border-radius: 7px;
+    margin: 3px 0; vertical-align: middle;
+}
+body.mc-console :is(#MainSubMenuSpan, #MeshSubMenuSpan, #EventsSubMenuSpan, #UserSubMenuSpan, #UsersSubMenuSpan, #ServerSubMenuSpan) .topbar_td {
+    font-size: 12px; font-weight: 550;
+}
+body.mc-console :is(#p2AccountSecurity, #p2AccountActions, #p2ServerActions) {
+    background: var(--mc-surface); border: 1px solid var(--mc-border); border-radius: 12px;
+    padding: 18px 22px; margin: 0 0 20px; line-height: 1.8;
+}
+body.mc-console :is(#p2AccountSecurity, #p2AccountActions, #p2ServerActions) > p:first-child { margin-top: 0; }
+body.mc-console :is(#p2AccountSecurity, #p2ServerActions) > div { margin-left: 0 !important; }
+body.mc-console #p2AccountActions .mL { margin: 0; }
+body.mc-console :is(#p2AccountSecurity, #p2AccountActions, #p2ServerActions) a {
+    display: inline-block; padding: 5px 0;
+}
+body.mc-console #p2AccountImageFrame { position: relative; z-index: 1; margin: 14px 20px; }
+body.mc-console #p2AccountImage { width: 88px; height: 88px; border-radius: 50%; box-shadow: none; border: 3px solid var(--mc-border); }
+body.mc-console #p2meshes { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 6px; }
+body.mc-console #p2meshes .mc-group-card {
+    box-sizing: border-box; width: 360px !important; max-width: 100%; height: auto !important;
+    min-height: 88px; padding: 18px !important; float: none !important;
+    background: var(--mc-surface); border: 1px solid var(--mc-border); border-radius: 12px;
+}
+body.mc-console #p2meshes .mc-group-card:hover { border-color: var(--mc-accent); }
+body.mc-console #p2meshes .mc-group-card > div:first-child { display: none; }
+body.mc-console #p2meshes .e2 { width: auto !important; float: none; background: transparent; }
+body.mc-console #p2meshes :is(.g1, .g2) { display: none; }
+body.mc-console #p2meshes .e1 { font-size: 15px; font-weight: 600; margin: 0 0 6px; }
+body.mc-console #p2meshes .e1 + div { color: var(--mc-muted); font-size: 12px; }
+body.mc-console #p2meshes .mi { width: 34px !important; height: 34px !important; margin: 6px 14px 0 0; background: var(--mc-accent); mask: url(../images/modern/group.svg) center / contain no-repeat; }
+body.mc-console .newMeshBtn { background: var(--mc-hover); color: var(--mc-accent); padding: 6px 12px; border-radius: 6px; height: auto; width: auto; }
+body.mc-console :is(.p3eventsTable, .p3usersTable) { border: 1px solid var(--mc-border); border-radius: 12px; overflow: hidden; background: var(--mc-surface); margin-bottom: 16px; }
+body.mc-console .mc-event-row td { padding-block: 12px; border-bottom: 1px solid var(--mc-border); color: var(--mc-text); background: transparent; font-size: 13px; line-height: 1.5; }
+body.mc-console .mc-event-row td:first-child { padding-left: 14px; padding-right: 8px; }
+body.mc-console .mc-event-row .style10 { background: transparent; }
+body.mc-console .mc-event-row :is(.g1, .g2) { width: 8px; background: transparent; }
+body.mc-console .mc-event-row:hover td { background: var(--mc-hover); }
+body.mc-console .mc-event-row td:first-child > div { width: 18px; height: 18px; margin: 0; background: var(--mc-muted); mask: url(../images/modern/event.svg) center / contain no-repeat; }
+body.mc-console .p3usersTable td { padding: 12px 8px; border-bottom: 1px solid var(--mc-border); }
+body.mc-console .p3usersTable th { padding: 12px 8px; color: var(--mc-muted); font-size: 12px; }
+body.mc-console #p3users :is(.bar, .baricon) { height: auto; min-height: 26px; background: transparent; }
+body.mc-console #p3users :is(.g1, .g2) { display: none; }
+body.mc-console #p3users .baricon > div:not(:has(img)) { width: 20px; height: 20px; background: var(--mc-accent); mask: url(../images/modern/user.svg) center / contain no-repeat; }
+body.mc-console #p5filehead { padding: 12px 16px; line-height: 42px; }
+body.mc-console #p5filesubhead { border-top: 1px solid var(--mc-border); padding: 8px 16px; }
+body.mc-console #p5filetable { box-sizing: border-box; background: var(--mc-surface); border: 1px solid var(--mc-border); border-radius: 12px; padding: 12px 16px; }
+body.mc-console #p5files .filelist { padding: 12px 10px; min-height: 22px; line-height: 22px; border-bottom: 1px solid var(--mc-border); border-radius: 6px; }
+body.mc-console #p5files .filelist:hover { background: var(--mc-hover); }
+body.mc-console #p5files :is(.fileIcon1, .fileIcon2, .fileIcon3) { background: var(--mc-accent); mask: url(../images/modern/folder.svg) center / contain no-repeat; width: 20px; height: 20px; margin-right: 8px; }
+body.mc-console #p5toolbarBottom td { background: transparent; color: var(--mc-muted); padding: 12px; }
+body.mc-console .mc-server-symbol { width: 44px; height: 44px; float: right; margin: 20px 12px; background: var(--mc-accent); mask: url(../images/modern/server.svg) center / contain no-repeat; }
+body.mc-console #serverStats { margin: 0 0 24px; }
+body.mc-console #serverStats > br { display: none; }
+body.mc-console :is(#serverCpuChartView, #serverMemoryChartView) { box-sizing: border-box; padding: 20px; margin: 0 16px 20px 0; min-width: 260px; border: 1px solid var(--mc-border); border-radius: 12px; background: var(--mc-surface); vertical-align: top; }
+body.mc-console #serverStatsTable > div { display: flex; flex-wrap: wrap; gap: 12px; }
+body.mc-console #serverStatsTable .userTableHeader { flex: 0 0 100%; border: 0; color: var(--mc-muted); margin-top: 12px; }
+body.mc-console .mc-stat-cell { flex: 1 1 220px; }
+body.mc-console .serverStateTableCell { box-sizing: border-box; width: 100%; border: 1px solid var(--mc-border); border-radius: 10px; background: var(--mc-surface); }
+body.mc-console .serverStateTableCell td { padding: 16px 12px; background: transparent; color: var(--mc-muted); }
+body.mc-console .serverStateTableCell :is(.h1, .h2) { display: none; }
+body.mc-console .serverStateTableCell span:last-child { margin-left: 16px; color: var(--mc-text); font-weight: 700; }
+body.mc-console #serverWarningsDiv { border: 1px solid #a45b33; border-radius: 12px; background: var(--mc-surface); padding: 18px 22px; margin: 0 0 24px; line-height: 1.7; }
+body.mc-console #serverWarningsDiv > br { display: none; }
+body.mc-console :is(#serverWarnings, #serverCertWarnings) { margin: 10px 0 0; overflow-wrap: anywhere; }
+body.mc-console :is(#serverWarnings, #serverCertWarnings) > div { color: #d97706 !important; font-weight: 500 !important; padding: 4px 0; }
+body.mc-console.night :is(#serverWarnings, #serverCertWarnings) > div { color: #fbbf76 !important; }
+@media (max-width: 1000px) {
+    body.mc-console .pTable .style14 > div { float: none !important; }
+    body.mc-console #p2AccountImageFrame { float: none; text-align: left; }
+}
+body.mc-console #p6title { position: relative; }
+body.mc-console .mc-server-symbol { position: absolute; right: 0; top: 0; width: 30px; height: 30px; margin: 0; float: none; }
+body.mc-console #p2ServerActions > div { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+body.mc-console #p2ServerActions > div > div { border: 1px solid var(--mc-border); border-radius: 8px; padding: 8px 12px; }
+body.mc-console #p2ServerActions > div .p2AccountActions { display: none; }
+body.mc-console #p2ServerActions > br { display: none; }
