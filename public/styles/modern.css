@@ -1,0 +1,200 @@
+/* Shared visual layer. Keep the original geometry for remote desktop and terminal. */
+:root {
+    --mc-bg: #f3f6fb;
+    --mc-surface: #ffffff;
+    --mc-raised: #edf2f9;
+    --mc-text: #25344b;
+    --mc-muted: #64748b;
+    --mc-border: #dce4ef;
+    --mc-accent: #2563eb;
+    --mc-hover: #e8efff;
+    --mc-shadow: 0 12px 36px rgb(15 23 42 / 8%);
+}
+body.night, [data-bs-theme="dark"] {
+    --mc-bg: #101827;
+    --mc-surface: #182338;
+    --mc-raised: #213049;
+    --mc-text: #e1e9f6;
+    --mc-muted: #a4b4cd;
+    --mc-border: #33435d;
+    --mc-accent: #8bb4ff;
+    --mc-hover: #273d60;
+    --mc-shadow: 0 12px 36px rgb(0 0 0 / 20%);
+    color-scheme: dark;
+}
+body {
+    background: var(--mc-bg);
+    color: var(--mc-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Arial, sans-serif;
+    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
+}
+body #container, body #column_l {
+    background-color: var(--mc-bg);
+    color: var(--mc-text);
+    border-color: var(--mc-border);
+}
+body #masthead {
+    background-color: #101f39;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 8%);
+}
+body #masthead .title, body #masthead .title2 { text-shadow: none; }
+body #masthead .title { font-weight: 650; letter-spacing: -.5px; }
+body #masthead .title2 { color: #afc1dd; }
+body #page_leftbar {
+    background: #101f39;
+    box-shadow: inset -1px 0 rgb(255 255 255 / 6%);
+}
+body #topbar, body .style3, body .style3x,
+body #MainMenuSpan, body #MainSubMenuSpan, body #MeshSubMenuSpan,
+body #EventsSubMenuSpan, body #UserSubMenuSpan, body #UsersSubMenuSpan,
+body #ServerSubMenuSpan, body #MainSubMenu, body #MeshSubMenu,
+body #UserSubMenu, body #ServerSubMenu, body #UserDummyMenu, body #PluginSubMenu {
+    background-color: #203552;
+    color: #e2eafb;
+}
+body .style3x:hover { background-color: #304d73; }
+body .style3sel, body .style3x.fullselect {
+    background-color: #2563eb;
+    color: white;
+    box-shadow: inset 0 -2px #9ec5ff;
+}
+body .style3x.semiselect { background-color: #304d73; }
+body #footer { background: #101f39; color: #afc1dd; }
+body #footer a { color: #c8d9f5; }
+body a { color: var(--mc-accent); text-decoration: none; }
+body a:hover { text-decoration: underline; }
+body h1, body h2, body h3 { letter-spacing: -.025em; font-weight: 650; }
+body hr { border: 0; border-top: 1px solid var(--mc-border); }
+/* Do not change control heights: the legacy toolbar uses measured 24px rows. */
+body input:not([type]), body input:is([type="text"], [type="password"], [type="email"], [type="number"], [type="search"], [type="url"], [type="input"]),
+body textarea, body select {
+    background-color: var(--mc-surface);
+    color: var(--mc-text);
+    border: 1px solid var(--mc-border);
+    border-radius: 6px;
+    font: inherit;
+    accent-color: #2563eb;
+}
+body input:is([type="button"], [type="submit"]), body button:not(.btn):not(.nav-link):not(.btn-close) {
+    border: 1px solid var(--mc-border);
+    border-radius: 6px;
+    background-color: var(--mc-surface);
+    color: var(--mc-text);
+    font-family: inherit;
+    cursor: pointer;
+}
+body input:is([type="button"], [type="submit"]):hover:enabled,
+body button:not(.btn):not(.nav-link):not(.btn-close):hover:enabled { background-color: var(--mc-hover); }
+body input:disabled, body button:disabled { opacity: .5; cursor: default; }
+body :is(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: 3px solid #679bfa;
+    outline-offset: 2px;
+}
+body #devListToolbarSpan { background: var(--mc-raised); color: var(--mc-text); border-radius: 6px; }
+body #devs { color: var(--mc-text); }
+body .deviceBarCheckbox, body .deviceBarIcon { background-color: transparent; }
+body .g1, body .g1t, body .g2, body .g2t { background: var(--mc-raised); }
+body .g1s, body .g2s { background: var(--mc-hover); }
+body .e2, body .e2t, body .bar, body .bar18,
+body .h1, body .h2 { background: var(--mc-raised); color: var(--mc-text); }
+body .e2s, body .sbar { background: var(--mc-hover); }
+body .h1pre, body .h2end, body .baricon { background: var(--mc-bg); }
+body .lbbutton { border-radius: 12px; }
+body .lbbuttonsel { box-shadow: 0 0 0 2px #79a8ff; }
+body .lbbuttonsel2 { border-radius: 12px 0 0 12px; }
+body .filelist:hover { background-color: var(--mc-hover); }
+body #dialog {
+    background: var(--mc-surface);
+    color: var(--mc-text);
+    border: 1px solid var(--mc-border);
+    border-radius: 12px;
+    box-shadow: 0 24px 80px rgb(10 25 50 / 28%);
+    font-family: inherit;
+    max-width: calc(100vw - 24px);
+}
+body #dialogHeader {
+    background: #203552;
+    border-radius: 11px 11px 0 0;
+    padding-block: 6px;
+}
+body .contextMenu, body #uiMenu {
+    background: var(--mc-surface);
+    color: var(--mc-text);
+    border: 1px solid var(--mc-border);
+    border-radius: 9px;
+    box-shadow: var(--mc-shadow);
+}
+body .contextMenu .cmtext:hover { background: var(--mc-hover); color: var(--mc-accent); }
+body .card, body.night .card {
+    background: var(--mc-surface) !important;
+    color: var(--mc-text);
+    border: 1px solid var(--mc-border);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgb(15 23 42 / 3%);
+}
+body .card:hover { background: var(--mc-raised) !important; }
+body .card-header { background: var(--mc-raised); border-color: var(--mc-border); }
+body .form-control, body .form-select {
+    border-color: var(--mc-border) !important;
+    background-color: var(--mc-surface);
+    color: var(--mc-text);
+}
+body .btn-primary { --bs-btn-bg: #2563eb; --bs-btn-border-color: #2563eb; color: white !important; background-color: #2563eb !important; }
+body .sidebar .nav-link { border-radius: 10px; margin: 3px 6px; }
+body .sidebar .nav-link:hover { background: #203b60; }
+/* Authentication panels share the same surface across password, SSO and MFA. */
+body.login {
+    background: radial-gradient(ellipse at 15% 15%, #254975 0, transparent 55%), #0c192f !important;
+    color: #e3ecfb;
+}
+body.login #container { background: transparent; border: 0; }
+body.login #column_l { background: transparent; color: #e3ecfb; padding-bottom: 32px; }
+body.login #welcomeText { color: #b7c8e2; line-height: 1.8; max-width: 780px; }
+body.login #welcomeimage img { box-shadow: 0 24px 60px rgb(0 0 0 / 25%); }
+body.login :is(#loginpanel, #createpanel, #resetpanel, #tokenpanel, #resettokenpanel, #resetpasswordpanel, #checkemailpanel, #waitpushpanel) {
+    box-sizing: border-box;
+    width: 360px;
+    max-width: calc(100vw - 32px);
+    padding: 28px;
+    border: 1px solid var(--mc-border);
+    border-radius: 18px;
+    background: var(--mc-surface);
+    color: var(--mc-text);
+    box-shadow: 0 24px 70px rgb(0 0 0 / 22%) !important;
+    line-height: 1.6;
+}
+body.login #logincell a { color: var(--mc-accent); }
+body.login input:is([type="text"], [type="password"], [type="email"]) {
+    background: var(--mc-bg) !important;
+    border: 1px solid var(--mc-border) !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
+    min-height: 42px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+body.login input:is([type="submit"], [type="button"]) {
+    background: #2563eb;
+    color: #fff;
+    border: 1px solid #2563eb;
+    border-radius: 8px !important;
+    padding: 10px 18px !important;
+    min-height: 42px;
+    font-weight: 600;
+}
+body.login input:is([type="submit"], [type="button"]):hover:enabled { background: #1d4ed8; }
+body.login #backgroundImage { opacity: .04 !important; }
+body.login #logincell > div:not([id]) { text-shadow: none !important; font-family: inherit !important; letter-spacing: -1px; }
+@media (max-width: 800px) {
+    body.login #container { width: 100%; min-width: 0; }
+    body.login #welcomeimage { display: none; }
+    body.login #logincell { width: 100%; }
+    body.login #centralTable { width: 100%; }
+}
+@media (prefers-reduced-motion: no-preference) {
+    body input, body button, body .card, body .sidebar .nav-link { transition: background-color .15s ease, border-color .15s ease; }
+}
+@media (forced-colors: active) {
+    body :is(input, button, select, textarea, #dialog, .card) { border: 1px solid ButtonText; }
+}

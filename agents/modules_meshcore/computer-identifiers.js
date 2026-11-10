@@ -35,9 +35,7 @@ function trimResults(val)
             }
             else
             {
-                var isZero = false;
-                try { isZero = (val[i][x] == 0); } catch (e) { }
-                if (val[i][x] == null || isZero)
+                if (val[i][x] == null || val[i][x] == 0)
                 {
                     delete val[i][x];
                 }

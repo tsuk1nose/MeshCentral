@@ -424,10 +424,9 @@ module.exports.CreateAmtScanner = function (parent) {
         var lines = headers.split('\r\n');
         for (var i in lines) {
             // Look for the Intel AMT version
-            var amtPrefix = 'Server: Intel(R) Active Management Technology ', smPrefix = 'Server: Intel(R) Standard Manageability ';
-            if (lines[i].startsWith(amtPrefix) || lines[i].startsWith(smPrefix)) {
+            if (lines[i].substring(0, 46) == 'Server: Intel(R) Active Management Technology ') {
                 // We need to check that the Intel AMT version is correct, in the "a.b.c" format
-                var ver = lines[i].startsWith(amtPrefix) ? lines[i].substring(amtPrefix.length) : lines[i].substring(smPrefix.length), splitver = ver.split('.');
+                var ver = lines[i].substring(46), splitver = ver.split('.');
                 if ((splitver.length == 3 || splitver.length == 4) && ('' + parseInt(splitver[0]) === splitver[0]) && ('' + parseInt(splitver[1]) === splitver[1]) && ('' + parseInt(splitver[2]) === splitver[2])) { return (splitver[0] + '.' + splitver[1] + '.' + splitver[2]); }
             }
         }
