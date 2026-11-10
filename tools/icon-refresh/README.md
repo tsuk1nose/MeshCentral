@@ -23,10 +23,11 @@ node tools/icon-refresh/generate.cjs /path/to/playwright /path/to/chromium
 The generator reads vendored SVGs, with no network access. It creates the PNG,
 WebP and JPEG compatibility files and a real multi-resolution `public/favicon.ico`
 containing 16, 32, 48, 64, 128 and 256px PNG payloads. PWA and Apple PNG icons are
-also listed in the manifest. Existing uploaded/custom icons remain independent.
+also listed in the manifest. These brand icons use the custom transparent M
+mark in `public/images/modern/mark.svg`, independently of the Lucide UI icons. Existing uploaded/custom icons remain independent.
 
-`public/images/modern/*.svg` and the inline navigation SVGs also use Lucide
-artwork. Default avatar/mark copies set a display stroke color; mask icons retain
+`public/images/modern/*.svg` (except the custom brand `mark.svg`) and the inline
+navigation SVGs use Lucide artwork. The default avatar copy sets a display stroke color; mask icons retain
 `currentColor`. Embedded base64 file icons are replaced in the desktop and mobile
 styles/templates with generated local PNGs.
 

@@ -48,3 +48,30 @@ artwork. PNG, WebP, notification/device/navigation sprite sheets, device-detail
 images, remote-control buttons, PWA icons and the actual multi-resolution ICO
 are regenerated from `tools/icon-refresh/manifest.json`. See that directory's
 README for source, license, retained brand assets and regeneration instructions.
+
+The favicon, PWA and Apple icons now use a custom transparent M brand mark;
+Lucide remains the source for the functional UI icons.
+
+Device group details now use a responsive property grid, compact group artwork,
+and theme-aware authorization/device tables. The group renderer no longer writes
+fixed black text or gray row backgrounds. Validation executed `p20updateMesh`
+with an administrator/empty-device fixture in both desktop templates and themes.
+
+
+The header includes a one-click theme switch backed by the existing `nightMode`
+preference, and restyled account/logout controls. Server-enforced light/dark modes
+still take precedence. Switching a dark Bootswatch base to light restores its
+default base first. Existing system-mode settings remain available.
+
+Both desktop templates load `public/scripts/modern-ui.js`. Classic dialogs now
+have a backdrop, contained scrolling, a persistent footer, focus containment,
+Escape-to-cancel and focus restoration. Existing confirmation handlers and
+remote-keyboard release behavior remain in place. Bootstrap dialogs retain their
+native lifecycle and gain matching spacing/form fields. Remaining legacy detail
+tables use the same themed surfaces as the group detail page.
+
+Run `tools/ui-smoke.cjs` with development Playwright/Chromium paths (and optionally
+a screenshot directory). It checks stored theme selection, server-enforced modes,
+the actual add-agent renderer and OS switching, dialog focus and callbacks, long
+form scrolling, narrow-screen layout, and the Bootstrap modal lifecycle. These
+checks use fixture server/device data; no agents are downloaded or installed.

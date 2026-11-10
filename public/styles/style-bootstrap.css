@@ -54,7 +54,7 @@ body {
 
 .fullscreen.login #container {
     -ms-grid-rows: 66px 24px 1fr 45px;
-    grid-template-rows: 66px 24px auto 45px;
+    grid-template-rows: 66px var(--mc-nav-height, 24px) auto 45px;
     -ms-grid-columns: 90px 1fr;
     /*grid-template-columns: 90px repeat(auto-fit, minmax(900px, 1fr));*/
     grid-template-areas: "header header" "nav nav" "content content" "footer footer";
@@ -62,7 +62,7 @@ body {
 
 .fullscreen.arg_hide #container {
     -ms-grid-rows: 66px 24px 1fr 45px;
-    grid-template-rows: 66px 24px auto 45px;
+    grid-template-rows: 66px var(--mc-nav-height, 24px) auto 45px;
     -ms-grid-columns: 90px 1fr;
     /*grid-template-columns: 90px repeat(auto-fit, minmax(900px, 1fr));*/
     grid-template-areas: "header header" "nav nav" "content content" "footer footer";
@@ -70,7 +70,7 @@ body {
 
 .fullscreen.menu_stack #container {
     -ms-grid-rows: 66px minmax(24px, max-content) 1fr 45px;
-    grid-template-rows: 66px minmax(24px, max-content) auto 45px;
+    grid-template-rows: 66px minmax(var(--mc-nav-height, 24px), max-content) auto 45px;
     -ms-grid-columns: 90px 1fr;
     /*grid-template-columns: 90px repeat(auto-fit, minmax(900px, 1fr));*/
     grid-template-areas: "header header" "nav nav" "content content" "footer footer";
@@ -78,7 +78,7 @@ body {
 
 .nofooter.fullscreen.menu_stack #container {
     -ms-grid-rows: 66px minmax(24px, max-content) 1fr 0px;
-    grid-template-rows: 66px minmax(24px, max-content) auto 0px;
+    grid-template-rows: 66px minmax(var(--mc-nav-height, 24px), max-content) auto 0px;
     -ms-grid-columns: 90px 1fr;
     /*grid-template-columns: 90px repeat(auto-fit, minmax(900px, 1fr));*/
     grid-template-areas: "header header" "nav nav" "content content" "footer footer";
@@ -99,12 +99,12 @@ body {
     -ms-grid-columns: 90px 1fr;
     grid-template-columns: 70px auto;
     -ms-grid-rows: 66px 24px 1fr 45px;
-    grid-template-rows: 66px 24px auto 45px;
+    grid-template-rows: 66px var(--mc-nav-height, 24px) auto 45px;
 }
 
 .nofooter #container {
     -ms-grid-rows: 66px 24px 1fr 0px;
-    grid-template-rows: 66px 24px auto 0px;
+    grid-template-rows: 66px var(--mc-nav-height, 24px) auto 0px;
 }
 
 .fulldesk #container {

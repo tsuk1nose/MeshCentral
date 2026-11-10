@@ -14,6 +14,7 @@ async function main() {
         const page = await browser.newPage();
         const sources = {};
         for (const name of fs.readdirSync(iconDir).filter(x => x.endsWith('.svg'))) sources[name.slice(0, -4)] = fs.readFileSync(path.join(iconDir, name), 'utf8');
+        sources['brand-mark'] = fs.readFileSync(path.join(root, 'public/images/modern/mark.svg'), 'utf8');
         const render = async (job) => page.evaluate(async ({ job, sources }) => {
             const canvas = document.createElement('canvas');
             canvas.width = job.width; canvas.height = job.height;
@@ -49,7 +50,7 @@ async function main() {
         let offset = header.length;
         for (let i = 0; i < sizes.length; i++) {
             const size = sizes[i];
-            const data = Buffer.from(await render({ width: size, height: size, icons: ['network'], color: '#ffffff', background: '#2563eb' }), 'base64');
+            const data = Buffer.from(await render({ width: size, height: size, icons: ['brand-mark'], color: '#6495ed' }), 'base64');
             const entry = 6 + i * 16;
             header[entry] = size === 256 ? 0 : size; header[entry + 1] = size === 256 ? 0 : size;
             header.writeUInt16LE(1, entry + 4); header.writeUInt16LE(32, entry + 6);

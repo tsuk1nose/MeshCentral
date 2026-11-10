@@ -371,3 +371,149 @@ body.mc-console #p2ServerActions > div { display: grid; grid-template-columns: r
 body.mc-console #p2ServerActions > div > div { border: 1px solid var(--mc-border); border-radius: 8px; padding: 8px 12px; }
 body.mc-console #p2ServerActions > div .p2AccountActions { display: none; }
 body.mc-console #p2ServerActions > br { display: none; }
+
+/* Device group details: property grid and theme-aware authorization tables. */
+body.mc-console #p20main { padding-bottom: 24px; }
+body.mc-console #p20title { position: relative; min-height: 62px; padding-right: 76px; }
+body.mc-console #p20title #MainMeshImage,
+body.mc-console #p20title #MainMeshImage img { width: 52px !important; height: 52px !important; }
+body.mc-console #p20title #MainMeshImage { position: absolute; right: 4px; top: 0; float: none !important; }
+body.mc-console #p20title .backButton { margin-top: 22px; margin-right: 12px; border-radius: 8px; background-color: var(--mc-surface); }
+body.mc-console .mc-mesh-properties { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; background: var(--mc-surface); border: 1px solid var(--mc-border); border-radius: 12px; padding: 12px 22px; margin: 0 0 16px; }
+body.mc-console .mc-mesh-property { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--mc-border); line-height: 1.6; }
+body.mc-console .mc-mesh-property-label { color: var(--mc-muted); font-size: 12px; }
+body.mc-console .mc-mesh-property-value { color: var(--mc-text); font-weight: 550; overflow-wrap: anywhere; }
+body.mc-console .mc-mesh-property-value i { font-style: normal; color: var(--mc-muted); font-weight: 400; }
+body.mc-console #p20info > input { padding: 8px 16px; min-height: 34px; }
+body.mc-console #p20info > a { display: inline-flex; align-items: center; gap: 6px; padding: 9px 13px; margin-bottom: 14px; border: 1px solid var(--mc-border); border-radius: 8px; background: var(--mc-surface); }
+body.mc-console .mc-mesh-table { width: 100%; border: 1px solid var(--mc-border); border-spacing: 0; border-radius: 12px; overflow: hidden; background: var(--mc-surface); color: var(--mc-text); margin-bottom: 18px; }
+body.mc-console .mc-mesh-table th { padding: 14px 18px; background: var(--mc-raised); color: var(--mc-muted); font-size: 12px; font-weight: 600; }
+body.mc-console .mc-mesh-table td { padding: 15px 18px; border-top: 1px solid var(--mc-border); line-height: 1.5; }
+body.mc-console .mc-mesh-table tr:hover td { background: var(--mc-hover); }
+body.mc-console .mc-mesh-table td > i { color: var(--mc-muted); font-style: normal; }
+body.mc-console .mc-mesh-table :is(.m1, .m2, .m3, .m4, [class^="j"]) { margin-top: 2px; margin-right: 6px; }
+body.mc-console .mc-mesh-danger a { display: inline-block; padding: 9px 14px; border-radius: 8px; border: 1px solid #d76a6a; color: #d84f4f; }
+body.mc-console.night .mc-mesh-danger a { color: #ffa3a3; border-color: #834848; }
+@media (max-width: 1100px) {
+    body.mc-console .mc-mesh-properties { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+    body.mc-console .mc-mesh-property { grid-template-columns: 100px minmax(0, 1fr); }
+    body.mc-console .mc-mesh-table td, body.mc-console .mc-mesh-table th { padding: 12px 10px; }
+}
+body.mc-console #p20title .backButton { margin-top: 0; }
+body.mc-console #p20main #MainMeshImage,
+body.mc-console #p20main #MainMeshImage img { width: 52px !important; height: 52px !important; }
+body.mc-console #p20info3 { min-width: 0; }
+body.mc-console .mc-mesh-table { --bs-table-bg: var(--mc-surface); --bs-table-color: var(--mc-text); --bs-table-hover-bg: var(--mc-hover); --bs-table-hover-color: var(--mc-text); }
+
+/* Header actions and a persistent one-click color-mode switch. */
+body.mc-console #masthead { position: relative; }
+body.mc-console .mc-header-tools { position: absolute; right: 22px; top: 14px; display: flex; align-items: center; gap: 12px; max-width: 60%; }
+body.mc-console #logoutControl { display: flex; align-items: center; margin: 0; padding: 0; font-size: 12px; }
+body.mc-console :is(#logoutControlSpan, #logoutControlSpan2) { display: inline-flex; align-items: center; gap: 10px; }
+body.mc-console #masthead :is(.mc-theme-toggle, .mc-account-button, .mc-logout-link) { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 36px; padding: 7px 12px; border: 1px solid #354b69; border-radius: 9px; background: #1b2e49; color: #e2ecfb; font: inherit; font-size: 12px; text-decoration: none; box-sizing: border-box; }
+body.mc-console #masthead .mc-account-button { max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background: transparent; border-color: transparent; }
+body.mc-console #masthead .mc-logout-link { color: #bfcee3; background: transparent; }
+body.mc-console #masthead .mc-theme-toggle:hover:enabled, body.mc-console #masthead .mc-account-button:hover:enabled, body.mc-console #masthead .mc-logout-link:hover { background: #2b4466; color: white; text-decoration: none; }
+body.mc-console .mc-theme-icon { width: 17px; height: 17px; background: currentColor; mask: url(../images/lucide/moon.svg) center / contain no-repeat; }
+body.mc-console.night .mc-theme-icon { mask-image: url(../images/lucide/sun.svg); }
+body.mc-console #textnewui { top: auto; bottom: 2px; font-size: 10px; }
+body.mc-console #userDropdownButton { border: 1px solid #354b69; border-radius: 10px; background: #1b2e49; padding: 5px 10px; gap: 9px; }
+body.mc-console #userDropdownImage { width: 28px; height: 28px; border-radius: 50%; }
+body.mc-console #userDropdownName { font-size: 13px; font-weight: 550; }
+body.mc-console #userDropdownMenu { background: var(--mc-surface); color: var(--mc-text); border: 1px solid var(--mc-border); border-radius: 12px; box-shadow: var(--mc-shadow); }
+body.mc-console .userDropdownMenuItem { color: var(--mc-text); padding: 10px 14px; border-radius: 7px; }
+body.mc-console .userDropdownMenuItem:hover { background: var(--mc-hover); }
+
+/* Shared generated fields, in dialogs and detail panels. */
+body.mc-console .mc-field { display: grid; grid-template-columns: minmax(120px, 150px) minmax(0, 1fr); align-items: start; gap: 14px; margin: 0; padding: 10px 0; line-height: 1.65; }
+body.mc-console .mc-field > :first-child { color: var(--mc-muted); font-size: 12px; }
+body.mc-console .mc-field > :last-child { min-width: 0; overflow-wrap: anywhere; }
+body.mc-console .mc-field > [class*="col"] { width: auto; padding: 0; }
+body.mc-console :is(#p30info, #p51info, #p10html, #p10html2, #p10html3, #p10html4, #p10html5) .mc-field { border-bottom: 1px solid var(--mc-border); }
+body.mc-console :is(#p30info, #p51info) > .mc-field:first-child { margin-top: 12px; }
+body.mc-console .mc-detail-table { width: 100%; border: 1px solid var(--mc-border); border-spacing: 0; border-radius: 12px; overflow: hidden; color: var(--mc-text); background: var(--mc-surface); margin: 18px 0; }
+/* Old renderers put colors directly on rows. Scope overrides to migrated tables. */
+body.mc-console .mc-detail-table tr { background: transparent !important; }
+body.mc-console .mc-detail-table th { background: var(--mc-raised); color: var(--mc-muted); padding: 14px 16px; font-size: 12px; }
+body.mc-console .mc-detail-table td { padding: 13px 16px; color: var(--mc-text); border-top: 1px solid var(--mc-border); line-height: 1.6; }
+body.mc-console .mc-detail-table tr:hover td { background: var(--mc-hover); }
+body.mc-console :is(#p10title, #p30title, #p51title) picture img { max-width: 72px; max-height: 72px; object-fit: contain; }
+
+/* Common dialog frame, including custom forms, downloads, settings and confirms. */
+.mc-dialog-backdrop { display: none; position: fixed; inset: 0; background: rgb(5 12 25 / 58%); z-index: 10010; }
+body.mc-dialog-open .mc-dialog-backdrop { display: block; }
+body.mc-console #dialog { box-sizing: border-box; width: 600px; max-width: calc(100vw - 32px); max-height: 84vh; max-height: 84dvh; top: 8vh; left: max(16px, calc((100vw - 600px) / 2)); z-index: 10020; overflow: hidden; border-radius: 16px; background: var(--mc-surface); color: var(--mc-text); box-shadow: 0 30px 100px rgb(0 0 0 / 35%); }
+body.mc-console #dialog:not([style*="display:none"]):not([style*="display: none"]) { display: flex; flex-direction: column; }
+body.mc-console #dialogHeader { box-sizing: border-box; flex-shrink: 0; margin: 0; padding: 16px 20px; min-height: 58px; border-bottom: 1px solid var(--mc-border); border-radius: 15px 15px 0 0; background: var(--mc-surface); color: var(--mc-text); }
+body.mc-console #id_dialogtitle { font-size: 16px; font-weight: 650; padding: 0 36px 0 0; line-height: 26px; }
+body.mc-console #id_dialogclose { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; margin: 0; border-radius: 7px; color: var(--mc-muted); font-size: 14px; }
+body.mc-console #id_dialogclose:hover { background: var(--mc-hover); color: var(--mc-text); }
+body.mc-console #dialogBody { min-height: 0; margin: 0; padding: 16px 24px; overflow: auto; overscroll-behavior: contain; line-height: 1.7; }
+body.mc-console #dialogBody > div { margin: 0; }
+body.mc-console #id_dialogMessage { padding: 4px 0; text-align: start; }
+body.mc-console #idx_dlgButtonBar { flex-shrink: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 10px; margin: 0; padding: 14px 24px; border-top: 1px solid var(--mc-border); background: var(--mc-raised); overflow: visible; }
+body.mc-console #idx_dlgButtonBar > input { float: none; margin: 0; min-height: 38px; padding: 8px 18px; border-radius: 8px; }
+body.mc-console #idx_dlgButtonBar > div:has(#idx_dlgDeleteButton) { margin-right: auto; }
+body.mc-console #idx_dlgDeleteButton { float: none; margin: 0; padding: 8px 18px; min-height: 38px; color: #e45e65; border-color: #b75d66; }
+body.mc-console #idx_dlgOkButton { order: 2; background: #2563eb; color: #fff; border-color: #2563eb; }
+body.mc-console #idx_dlgMoreButtons { margin-right: auto; }
+body.mc-console :is(#dialog, .modal) .mc-field :is(select, textarea, input:not([type]), input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="url"]) { box-sizing: border-box; width: 100% !important; max-width: 100%; min-height: 38px; padding: 8px 10px; border: 1px solid var(--mc-border); border-radius: 8px; background-color: var(--mc-bg); color: var(--mc-text); font: inherit; }
+body.mc-console :is(#dialog, .modal) .mc-field select { height: auto; }
+body.mc-console :is(#dialog, .modal) .mc-field label { line-height: 1.7; }
+body.mc-console :is(#dialog, .modal) .mc-field > :last-child > a { display: inline-block; padding: 3px 0; font-weight: 550; }
+body.mc-console :is(#dialog, .modal) hr { margin: 16px 0; }
+body.mc-console #dialog .dialogText { max-height: 50vh; font-size: 13px; }
+body.mc-console .modal { --bs-modal-width: 640px; --bs-modal-bg: var(--mc-surface); --bs-modal-color: var(--mc-text); --bs-modal-border-color: var(--mc-border); }
+body.mc-console .modal-content { max-height: 90vh; max-height: 90dvh; border-radius: 16px; background: var(--mc-surface); color: var(--mc-text); border: 1px solid var(--mc-border); box-shadow: 0 30px 100px rgb(0 0 0 / 30%); }
+body.mc-console .modal-header { padding: 18px 24px; background: var(--mc-surface); border-bottom: 1px solid var(--mc-border); border-radius: 15px 15px 0 0; }
+body.mc-console .modal-header .modal-title { font-size: 16px; font-weight: 650; color: var(--mc-text) !important; }
+body.mc-console .modal-header .btn-close { background: none; color: var(--mc-text); opacity: 1; filter: none; width: 24px; height: 24px; }
+body.mc-console .modal-header .btn-close::before { content: ""; display: block; width: 20px; height: 20px; background: currentColor; mask: url(../images/lucide/x.svg) center / contain no-repeat; }
+body.mc-console .modal-body { padding: 18px 24px; overflow: auto; overscroll-behavior: contain; line-height: 1.7; }
+body.mc-console .modal-footer { padding: 14px 24px; background: var(--mc-raised); border-top: 1px solid var(--mc-border); border-radius: 0 0 15px 15px; }
+body.mc-console .modal-footer .btn { min-height: 38px; padding: 8px 18px; border-radius: 8px; }
+body.mc-console :is(#d2serverfiles, #d3serverfiles) { box-sizing: border-box; background: var(--mc-bg); color: var(--mc-text); border: 1px solid var(--mc-border); border-radius: 8px; padding: 12px; }
+@media (max-width: 900px) {
+    body.mc-console .mc-theme-label { display: none; }
+    body.mc-console .mc-header-tools { right: 12px; gap: 6px; }
+    body.mc-console #masthead .mc-account-button { max-width: 140px; }
+}
+@media (max-width: 600px) {
+    body.mc-console :is(#dialog, .modal) .mc-field { grid-template-columns: minmax(0, 1fr); gap: 5px; }
+    body.mc-console #dialog { left: 12px; top: 4vh; max-width: calc(100vw - 24px); max-height: 92vh; max-height: 92dvh; }
+    body.mc-console #dialogBody, body.mc-console .modal-body { padding: 14px 18px; }
+    body.mc-console #masthead .title { font-size: 19px; padding-left: 14px; }
+    body.mc-console #masthead .title2 { display: none; }
+    body.mc-console #masthead .mc-account-button { max-width: 100px; }
+}
+body.mc-console #idx_dlgCancelButton { order: 1; }
+body.mc-console .modal-body { min-height: 0; }
+body.mc-console #dialogBody :is(select, textarea, input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="url"]) { box-sizing: border-box; max-width: 100%; min-height: 36px; padding: 7px 10px; border: 1px solid var(--mc-border); border-radius: 8px; background: var(--mc-bg); color: var(--mc-text); font: inherit; }
+body.mc-console #dialog7 div:has(> select) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(140px, 200px); align-items: center; gap: 12px; padding: 8px 0; }
+body.mc-console #dialog7 select { float: none; width: 100%; }
+body.mc-console #dialog7 fieldset { border: 1px solid var(--mc-border); border-radius: 10px; padding: 12px 16px; margin: 12px 0; }
+body.mc-console #dialog7 legend { color: var(--mc-muted); padding: 0 6px; font-size: 12px; }
+body.mc-console .mc-detail-table th[style*="width:430px"] { width: 35% !important; }
+@media (max-width: 600px) {
+    body.mc-console #dialog7 div:has(> select) { grid-template-columns: minmax(0, 1fr); gap: 5px; }
+}
+
+/* Main and secondary navigation share a taller, scrollable pill-style tab row. */
+body.mc-console { --mc-nav-height: 44px; }
+body.mc-console #topbar { background: var(--mc-bg); }
+body.mc-console :is(#MainMenuSpan, #MainSubMenuSpan, #MeshSubMenuSpan, #EventsSubMenuSpan, #UserSubMenuSpan, #UsersSubMenuSpan, #ServerSubMenuSpan) {
+    height: 44px; box-sizing: border-box; background: var(--mc-surface); color: var(--mc-text); border-bottom: 1px solid var(--mc-border);
+}
+body.mc-console :is(#MainSubMenuSpan, #MeshSubMenuSpan, #EventsSubMenuSpan, #UserSubMenuSpan, #UsersSubMenuSpan, #ServerSubMenuSpan) { overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; }
+body.mc-console :is(#MainMenuSpan, #MainSubMenu, #MeshSubMenu, #EventsSubMenu, #UserSubMenu, #UsersSubMenu, #ServerSubMenu) {
+    height: 44px; border-collapse: separate; border-spacing: 5px 5px; padding: 0 12px; background: var(--mc-surface); color: var(--mc-text);
+}
+body.mc-console #topbar .topbar_td { box-sizing: border-box; height: 32px; min-width: 84px; padding: 0 16px; border-radius: 7px; background: transparent; color: var(--mc-muted); font-size: 12px; font-weight: 550; white-space: nowrap; }
+body.mc-console #topbar .topbar_td:hover { background: var(--mc-raised); color: var(--mc-text); }
+body.mc-console #topbar .topbar_td:is(.style3sel, .fullselect) { background: var(--mc-hover); color: var(--mc-accent); box-shadow: inset 0 0 0 1px var(--mc-border); font-weight: 650; }
+body.mc-console #topbar .topbar_td.semiselect { background: var(--mc-raised); color: var(--mc-text); }
+body.mc-console #topbar .topbar_td_end { background: transparent; }
+body.mc-console #uiMenuButton { color: var(--mc-muted); top: 10px; z-index: 1; }
+body.mc-console #logoutControlSpan2 { color: var(--mc-text); top: 4px; }

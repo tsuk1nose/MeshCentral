@@ -1673,46 +1673,41 @@
       "width": 16,
       "height": 16,
       "icons": [
-        "network"
+        "brand-mark"
       ],
-      "color": "#ffffff",
-      "background": "#2563eb"
+      "color": "#6495ed"
     },
     "public/android-chrome-192x192.png": {
       "width": 192,
       "height": 192,
       "icons": [
-        "network"
+        "brand-mark"
       ],
-      "color": "#ffffff",
-      "background": "#2563eb"
+      "color": "#6495ed"
     },
     "public/favicon-303x303.png": {
       "width": 303,
       "height": 303,
       "icons": [
-        "network"
+        "brand-mark"
       ],
-      "color": "#ffffff",
-      "background": "#2563eb"
+      "color": "#6495ed"
     },
     "public/android-chrome-512x512.png": {
       "width": 512,
       "height": 512,
       "icons": [
-        "network"
+        "brand-mark"
       ],
-      "color": "#ffffff",
-      "background": "#2563eb"
+      "color": "#6495ed"
     },
     "public/favicon-32x32.png": {
       "width": 32,
       "height": 32,
       "icons": [
-        "network"
+        "brand-mark"
       ],
-      "color": "#ffffff",
-      "background": "#2563eb"
+      "color": "#6495ed"
     },
     "public/images/webp/user-256.webp": {
       "width": 256,

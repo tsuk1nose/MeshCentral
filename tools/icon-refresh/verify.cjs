@@ -15,7 +15,7 @@ async function main() {
             const entry = 6 + i * 16, size = ico[entry] || 256;
             const length = ico.readUInt32LE(entry + 8), offset = ico.readUInt32LE(entry + 12);
             if (offset + length > ico.length) throw Error('ICO payload outside file');
-            jobs.push({ file: 'favicon.ico/' + size, width: size, height: size, icons: ['network'], data: ico.subarray(offset, offset + length).toString('base64') });
+            jobs.push({ file: 'favicon.ico/' + size, width: size, height: size, icons: ['brand-mark'], data: ico.subarray(offset, offset + length).toString('base64') });
         }
         const count = await page.evaluate(async jobs => {
             for (const job of jobs) {
@@ -26,6 +26,11 @@ async function main() {
                 if (job.width % job.icons.length !== 0) throw Error('Fractional sprite cell: ' + job.file);
                 const canvas = document.createElement('canvas'); canvas.width = job.width; canvas.height = job.height;
                 const ctx = canvas.getContext('2d'); ctx.drawImage(image, 0, 0);
+                if (job.icons[0] === 'brand-mark') {
+                    for (const [x, y] of [[0, 0], [job.width - 1, 0], [0, job.height - 1], [job.width - 1, job.height - 1]]) {
+                        if (ctx.getImageData(x, y, 1, 1).data[3] !== 0) throw Error('Favicon background is opaque: ' + job.file);
+                    }
+                }
                 const cellWidth = job.width / job.icons.length;
                 for (let i = 0; i < job.icons.length; i++) {
                     const data = ctx.getImageData(i * cellWidth, 0, cellWidth, job.height).data;
