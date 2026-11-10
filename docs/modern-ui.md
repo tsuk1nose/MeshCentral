@@ -12,14 +12,19 @@ They introduce shared light/dark colors, navy navigation, updated form fields,
 rounded cards and dialogs, visible keyboard focus, and responsive login panels.
 No external fonts, packages, or network resources are required.
 
-The existing layout dimensions, element IDs, authentication handlers, and remote
+The management shell uses a 224px labeled sidebar (76px below 1000px), line
+icons, a taller device toolbar, and card-style empty groups. The device list uses
+flex layout for scrolling. Element IDs, authentication handlers, and remote
 session logic are retained. Dedicated mobile management templates retain their
 upstream styling. Custom branding and administrator CSS can still override the
-shared theme. Remove the modern stylesheet link in the four templates to use the
-original appearance.
+shared theme. The management templates also contain inline SVG navigation icons and visual
+classes for the generated device groups.
 
 Validation: Chromium rendered all four templates in light and dark mode, with
-scripts disabled and representative content for the management shell. Both login
+startup disabled. The classic device page was rendered by its real
+`updateDevices` and `getMeshActions` functions with an empty-group fixture;
+peripheral session callbacks were stubbed. Checks confirm the dark workspace
+no longer falls back to black. Both login
 templates were also checked at 390px width for horizontal overflow, and their
 username fields were checked for keyboard input and panel containment. These are
 visual checks, not authenticated integration tests. Real login, MFA, remote
