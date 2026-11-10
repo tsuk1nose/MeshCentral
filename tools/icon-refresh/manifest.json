@@ -1,0 +1,1996 @@
+{
+  "library": "lucide-static",
+  "version": "1.71.0",
+  "jobs": {
+    "public/images/icons16.png": {
+      "width": 128,
+      "height": 16,
+      "icons": [
+        "monitor",
+        "server",
+        "monitor",
+        "laptop",
+        "smartphone",
+        "cpu",
+        "router",
+        "printer"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons32.png": {
+      "width": 256,
+      "height": 32,
+      "icons": [
+        "monitor",
+        "server",
+        "monitor",
+        "laptop",
+        "smartphone",
+        "cpu",
+        "router",
+        "printer"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons50.png": {
+      "width": 400,
+      "height": 50,
+      "icons": [
+        "monitor",
+        "server",
+        "monitor",
+        "laptop",
+        "smartphone",
+        "cpu",
+        "router",
+        "printer"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons64.png": {
+      "width": 512,
+      "height": 64,
+      "icons": [
+        "monitor",
+        "server",
+        "monitor",
+        "laptop",
+        "smartphone",
+        "cpu",
+        "router",
+        "printer"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons100.png": {
+      "width": 800,
+      "height": 100,
+      "icons": [
+        "monitor",
+        "server",
+        "monitor",
+        "laptop",
+        "smartphone",
+        "cpu",
+        "router",
+        "printer"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/leftbar-64.png": {
+      "width": 384,
+      "height": 64,
+      "icons": [
+        "user-round",
+        "monitor",
+        "list-checks",
+        "folder",
+        "users-round",
+        "server"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/leftbar-128.png": {
+      "width": 768,
+      "height": 128,
+      "icons": [
+        "user-round",
+        "monitor",
+        "list-checks",
+        "folder",
+        "users-round",
+        "server"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify16.png": {
+      "width": 144,
+      "height": 16,
+      "icons": [
+        "circle-check",
+        "circle-x",
+        "triangle-alert",
+        "circle-minus",
+        "info",
+        "circle-help",
+        "shield-alert",
+        "shield-check",
+        "shield-x"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify24.png": {
+      "width": 216,
+      "height": 24,
+      "icons": [
+        "circle-check",
+        "circle-x",
+        "triangle-alert",
+        "circle-minus",
+        "info",
+        "circle-help",
+        "shield-alert",
+        "shield-check",
+        "shield-x"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify48.png": {
+      "width": 432,
+      "height": 48,
+      "icons": [
+        "circle-check",
+        "circle-x",
+        "triangle-alert",
+        "circle-minus",
+        "info",
+        "circle-help",
+        "shield-alert",
+        "shield-check",
+        "shield-x"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/images16.png": {
+      "width": 144,
+      "height": 16,
+      "icons": [
+        "check",
+        "circle-check",
+        "circle-x",
+        "search",
+        "chevron-left",
+        "chevron-right",
+        "user-round",
+        "user-round-check",
+        "users-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/views.png": {
+      "width": 532,
+      "height": 28,
+      "icons": [
+        "list",
+        "columns-3",
+        "layout-grid",
+        "map-pin",
+        "maximize",
+        "minimize",
+        "panel-left",
+        "panel-top",
+        "square",
+        "minimize",
+        "moon",
+        "panel-bottom",
+        "expand",
+        "grid-2x2",
+        "notebook-pen",
+        "chevrons-right",
+        "chevrons-left",
+        "chevron-left",
+        "chevron-right"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/messenger16.png": {
+      "width": 240,
+      "height": 16,
+      "icons": [
+        "camera",
+        "camera",
+        "pencil",
+        "file-text",
+        "files",
+        "mic",
+        "mic-off",
+        "messages-square",
+        "square-check",
+        "download",
+        "phone",
+        "file-x",
+        "square",
+        "x",
+        "save"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/messenger32.png": {
+      "width": 480,
+      "height": 32,
+      "icons": [
+        "camera",
+        "camera",
+        "pencil",
+        "file-text",
+        "files",
+        "mic",
+        "mic-off",
+        "messages-square",
+        "square-check",
+        "download",
+        "phone",
+        "file-x",
+        "square",
+        "x",
+        "save"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/messenger-icons.png": {
+      "width": 416,
+      "height": 32,
+      "icons": [
+        "camera",
+        "camera",
+        "pencil",
+        "file-text",
+        "files",
+        "mic",
+        "mic-off",
+        "messages-square",
+        "square-check",
+        "download",
+        "phone",
+        "file-x",
+        "square"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/MeshComm64b.png": {
+      "width": 832,
+      "height": 64,
+      "icons": [
+        "camera",
+        "camera",
+        "pencil",
+        "file-text",
+        "files",
+        "mic",
+        "mic-off",
+        "messages-square",
+        "square-check",
+        "download",
+        "phone",
+        "file-x",
+        "square"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/sharing-32.png": {
+      "width": 96,
+      "height": 32,
+      "icons": [
+        "monitor",
+        "terminal",
+        "folder"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/sharing-64.png": {
+      "width": 192,
+      "height": 64,
+      "icons": [
+        "monitor",
+        "terminal",
+        "folder"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/batteries24.png": {
+      "width": 154,
+      "height": 24,
+      "icons": [
+        "battery-warning",
+        "battery-low",
+        "battery-low",
+        "battery-low",
+        "battery-medium",
+        "battery-medium",
+        "battery-medium",
+        "battery-full",
+        "battery-full",
+        "battery-full",
+        "battery-full"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/batteries48.png": {
+      "width": 308,
+      "height": 48,
+      "icons": [
+        "battery-warning",
+        "battery-low",
+        "battery-low",
+        "battery-low",
+        "battery-medium",
+        "battery-medium",
+        "battery-medium",
+        "battery-full",
+        "battery-full",
+        "battery-full",
+        "battery-full"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/group-256.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/user-32.png": {
+      "width": 32,
+      "height": 32,
+      "icons": [
+        "circle-user-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/monitor32.png": {
+      "width": 41,
+      "height": 32,
+      "icons": [
+        "monitor"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mobile-desk-mouse-right.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "mouse"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/ram.png": {
+      "width": 84,
+      "height": 33,
+      "icons": [
+        "memory-stick"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-help-notify-10.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "circle-help"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/assistant-200.png": {
+      "width": 148,
+      "height": 200,
+      "icons": [
+        "headset"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-film.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "video"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons256-6-1.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "cpu"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-clipboard.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "clipboard"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-star-notify-16.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "star"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-relay.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/right-30.png": {
+      "width": 20,
+      "height": 30,
+      "icons": [
+        "chevron-right"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons256-7-1.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "router"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/link2.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "plus"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-url.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "external-link"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-url2.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "external-link"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/user-64.png": {
+      "width": 64,
+      "height": 64,
+      "icons": [
+        "circle-user-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mobile-desk-mouse.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "mouse"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/key12.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "key-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/messaging12.png": {
+      "width": 12,
+      "height": 12,
+      "icons": [
+        "messages-square"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/report.png": {
+      "width": 289,
+      "height": 356,
+      "icons": [
+        "chart-no-axes-combined"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/hardware-key-OTP-24.png": {
+      "width": 24,
+      "height": 18,
+      "icons": [
+        "key-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/c2.png": {
+      "width": 8,
+      "height": 8,
+      "icons": [
+        "chevron-down"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-remove.png": {
+      "width": 12,
+      "height": 12,
+      "icons": [
+        "x"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/user-128.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "circle-user-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-share2.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "share-2"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons256-5-1.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "smartphone"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/checkbox60.png": {
+      "width": 60,
+      "height": 60,
+      "icons": [
+        "square-check"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-star-notify.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "star"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/clipboard-128.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "clipboard"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/android-40.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "smartphone"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-installmesh.png": {
+      "width": 12,
+      "height": 12,
+      "icons": [
+        "download"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-background-red.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "wallpaper"
+      ],
+      "color": "#ef6464"
+    },
+    "public/images/left-30.png": {
+      "width": 20,
+      "height": 30,
+      "icons": [
+        "chevron-left"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-film-red.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "video"
+      ],
+      "color": "#ef6464"
+    },
+    "public/images/icon-relay-notifyx10.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-share.png": {
+      "width": 18,
+      "height": 20,
+      "icons": [
+        "share-2"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/ram2.png": {
+      "width": 33,
+      "height": 48,
+      "icons": [
+        "memory-stick"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-keylock-red.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "key-round"
+      ],
+      "color": "#ef6464"
+    },
+    "public/images/c1.png": {
+      "width": 8,
+      "height": 8,
+      "icons": [
+        "chevron-right"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-addnew.png": {
+      "width": 12,
+      "height": 12,
+      "icons": [
+        "plus"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/link6.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "users-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/plugin.png": {
+      "width": 76,
+      "height": 75,
+      "icons": [
+        "puzzle"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/android-80.png": {
+      "width": 80,
+      "height": 80,
+      "icons": [
+        "smartphone"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/trash.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "trash-2"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-monitor1.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "monitor"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/dot.png": {
+      "width": 20,
+      "height": 20,
+      "icons": [
+        "circle"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-relay-notifyx.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/user-256.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "circle-user-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-graph.png": {
+      "width": 12,
+      "height": 15,
+      "icons": [
+        "chart-no-axes-combined"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/iplocation.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "map-pin"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-relay-notify.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/usbkey70.png": {
+      "width": 31,
+      "height": 70,
+      "icons": [
+        "usb"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons256-8-1.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "printer"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mobile-desk-keyboard-open.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "keyboard"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/phone12.png": {
+      "width": 7,
+      "height": 12,
+      "icons": [
+        "smartphone"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/3bars-30.png": {
+      "width": 30,
+      "height": 30,
+      "icons": [
+        "menu"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-chat.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "messages-square"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mobile-desk-scale-out.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "zoom-out"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mobile-desk-menu-close.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "x"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/meshicon16.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-star-notify-10.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "star"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-refresh.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "refresh-cw"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-gear.png": {
+      "width": 24,
+      "height": 24,
+      "icons": [
+        "settings"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mobile-desk-exit.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "log-out"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/report60.png": {
+      "width": 60,
+      "height": 74,
+      "icons": [
+        "chart-no-axes-combined"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-relay - Copy.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/link5.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "pencil"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/link7.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "external-link"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/assistant-100.png": {
+      "width": 74,
+      "height": 100,
+      "icons": [
+        "headset"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/assistant2-200.png": {
+      "width": 148,
+      "height": 200,
+      "icons": [
+        "headset"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/rcheckbox60.png": {
+      "width": 60,
+      "height": 60,
+      "icons": [
+        "square"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/user-32x.png": {
+      "width": 32,
+      "height": 32,
+      "icons": [
+        "circle-user-round"
+      ],
+      "color": "#8696ac"
+    },
+    "public/images/mobile-pointer.png": {
+      "width": 20,
+      "height": 20,
+      "icons": [
+        "mouse-pointer-2"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-clipboard-out.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "clipboard-copy"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-camera.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "camera"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/gears-128.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "settings"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-keylock.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "key-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/c3.png": {
+      "width": 8,
+      "height": 8,
+      "icons": [
+        "chevron-up"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mobile-desk-menu-open.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "menu"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-lock.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "lock-keyhole"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/messaging40.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "messages-square"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons256-2-1.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "server"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/messenger.png": {
+      "width": 49,
+      "height": 38,
+      "icons": [
+        "messages-square"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/server-256.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "server"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons256-3-1.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "monitor"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-manage.png": {
+      "width": 12,
+      "height": 12,
+      "icons": [
+        "settings-2"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/phone80.png": {
+      "width": 40,
+      "height": 80,
+      "icons": [
+        "smartphone"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/servericon120.png": {
+      "width": 120,
+      "height": 120,
+      "icons": [
+        "server"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-relay-notify-40.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/x16.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "x"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-play.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "play"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/meshicon100.png": {
+      "width": 100,
+      "height": 100,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/hardware-key-WebAuthn-24.png": {
+      "width": 24,
+      "height": 18,
+      "icons": [
+        "key-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/assistant-400.png": {
+      "width": 296,
+      "height": 400,
+      "icons": [
+        "headset"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/link3.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "x"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mobile-desk-keyboard-close.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "keyboard"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-help-notify-40.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "circle-help"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mail12.png": {
+      "width": 12,
+      "height": 12,
+      "icons": [
+        "mail"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/user-64x.png": {
+      "width": 64,
+      "height": 64,
+      "icons": [
+        "circle-user-round"
+      ],
+      "color": "#8696ac"
+    },
+    "public/images/assistant2-100.png": {
+      "width": 74,
+      "height": 100,
+      "icons": [
+        "headset"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-collapse.png": {
+      "width": 10,
+      "height": 16,
+      "icons": [
+        "chevrons-down-up"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/hardware-keypress-120.png": {
+      "width": 120,
+      "height": 117,
+      "icons": [
+        "fingerprint"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/assistant2-400.png": {
+      "width": 296,
+      "height": 400,
+      "icons": [
+        "headset"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/servericon64.png": {
+      "width": 64,
+      "height": 64,
+      "icons": [
+        "server"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/meshicon50.png": {
+      "width": 50,
+      "height": 50,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-clipboard-in.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "clipboard-paste"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-expand.png": {
+      "width": 10,
+      "height": 18,
+      "icons": [
+        "chevrons-up-down"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-help-notify-16.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "circle-help"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-star-notify-40.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "star"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons256-1-1.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "monitor"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/link1.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "check"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icons256-4-1.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "laptop"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-notify.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "bell"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/computers-128.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "monitor"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/link4.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "download"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/padlock12.png": {
+      "width": 8,
+      "height": 12,
+      "icons": [
+        "lock-keyhole"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-monitor2.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "monitor"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-background.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "wallpaper"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/x32.png": {
+      "width": 32,
+      "height": 32,
+      "icons": [
+        "x"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/info.png": {
+      "width": 47,
+      "height": 48,
+      "icons": [
+        "info"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/meshicon256.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/plugin24.png": {
+      "width": 24,
+      "height": 24,
+      "icons": [
+        "puzzle"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mesh-256.png": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mobile-touch.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "hand"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/key16.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "key-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mobile-desk-scale-in.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "zoom-in"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/icon-relay-notify10.png": {
+      "width": 10,
+      "height": 10,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mobile-desk-mouse-left.png": {
+      "width": 40,
+      "height": 40,
+      "icons": [
+        "mouse"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/user-50.png": {
+      "width": 50,
+      "height": 50,
+      "icons": [
+        "circle-user-round"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/tpm64.png": {
+      "width": 64,
+      "height": 64,
+      "icons": [
+        "shield-check"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/meshagent32.png": {
+      "width": 32,
+      "height": 51,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/battery32.png": {
+      "width": 32,
+      "height": 32,
+      "icons": [
+        "battery-medium"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/system64.png": {
+      "width": 64,
+      "height": 64,
+      "icons": [
+        "monitor"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/storage32.png": {
+      "width": 32,
+      "height": 42,
+      "icons": [
+        "hard-drive"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/meshagent64.png": {
+      "width": 64,
+      "height": 102,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/chip64.png": {
+      "width": 64,
+      "height": 51,
+      "icons": [
+        "cpu"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/software64.png": {
+      "width": 64,
+      "height": 71,
+      "icons": [
+        "app-window"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/motherboard64.png": {
+      "width": 64,
+      "height": 113,
+      "icons": [
+        "circuit-board"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/amt64.png": {
+      "width": 64,
+      "height": 97,
+      "icons": [
+        "cpu"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/graph32.png": {
+      "width": 32,
+      "height": 45,
+      "icons": [
+        "chart-no-axes-combined"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/storage64.png": {
+      "width": 64,
+      "height": 83,
+      "icons": [
+        "hard-drive"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/mobile32.png": {
+      "width": 32,
+      "height": 62,
+      "icons": [
+        "smartphone"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/ram64.png": {
+      "width": 64,
+      "height": 104,
+      "icons": [
+        "memory-stick"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/motherboard32.png": {
+      "width": 32,
+      "height": 57,
+      "icons": [
+        "circuit-board"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/mobile64.png": {
+      "width": 64,
+      "height": 124,
+      "icons": [
+        "smartphone"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/graph64.png": {
+      "width": 64,
+      "height": 89,
+      "icons": [
+        "chart-no-axes-combined"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/networking32.png": {
+      "width": 32,
+      "height": 42,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/tpm32.png": {
+      "width": 32,
+      "height": 32,
+      "icons": [
+        "shield-check"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/software32.png": {
+      "width": 32,
+      "height": 36,
+      "icons": [
+        "app-window"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/mobile128.png": {
+      "width": 128,
+      "height": 248,
+      "icons": [
+        "smartphone"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/battery64.png": {
+      "width": 64,
+      "height": 64,
+      "icons": [
+        "battery-medium"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/system32.png": {
+      "width": 32,
+      "height": 32,
+      "icons": [
+        "monitor"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/networking64.png": {
+      "width": 64,
+      "height": 83,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/amt32.png": {
+      "width": 32,
+      "height": 49,
+      "icons": [
+        "cpu"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/ram32.png": {
+      "width": 32,
+      "height": 52,
+      "icons": [
+        "memory-stick"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/details/chip32.png": {
+      "width": 32,
+      "height": 26,
+      "icons": [
+        "cpu"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify/icons128-0.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "monitor"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify/icons128-4.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "smartphone"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify/icons128-7.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "printer"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify/icons128-8.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify/icons128-2.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "monitor"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify/icons128-6.png": {
+      "width": 200,
+      "height": 200,
+      "icons": [
+        "router"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify/icons128-5.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "cpu"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify/icons128-3.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "laptop"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/notify/icons128-1.png": {
+      "width": 128,
+      "height": 128,
+      "icons": [
+        "server"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/favicon-16x16.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "network"
+      ],
+      "color": "#ffffff",
+      "background": "#2563eb"
+    },
+    "public/android-chrome-192x192.png": {
+      "width": 192,
+      "height": 192,
+      "icons": [
+        "network"
+      ],
+      "color": "#ffffff",
+      "background": "#2563eb"
+    },
+    "public/favicon-303x303.png": {
+      "width": 303,
+      "height": 303,
+      "icons": [
+        "network"
+      ],
+      "color": "#ffffff",
+      "background": "#2563eb"
+    },
+    "public/android-chrome-512x512.png": {
+      "width": 512,
+      "height": 512,
+      "icons": [
+        "network"
+      ],
+      "color": "#ffffff",
+      "background": "#2563eb"
+    },
+    "public/favicon-32x32.png": {
+      "width": 32,
+      "height": 32,
+      "icons": [
+        "network"
+      ],
+      "color": "#ffffff",
+      "background": "#2563eb"
+    },
+    "public/images/webp/user-256.webp": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "circle-user-round"
+      ],
+      "color": "#6d9ff4",
+      "format": "webp"
+    },
+    "public/images/webp/leftbar-64.webp": {
+      "width": 384,
+      "height": 64,
+      "icons": [
+        "user-round",
+        "monitor",
+        "list-checks",
+        "folder",
+        "users-round",
+        "server"
+      ],
+      "color": "#6d9ff4",
+      "format": "webp"
+    },
+    "public/images/webp/mesh-256.webp": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4",
+      "format": "webp"
+    },
+    "public/images/webp/group-256.webp": {
+      "width": 256,
+      "height": 256,
+      "icons": [
+        "network"
+      ],
+      "color": "#6d9ff4",
+      "format": "webp"
+    },
+    "public/images/webp/icons50.webp": {
+      "width": 400,
+      "height": 50,
+      "icons": [
+        "monitor",
+        "server",
+        "monitor",
+        "laptop",
+        "smartphone",
+        "cpu",
+        "router",
+        "printer"
+      ],
+      "color": "#6d9ff4",
+      "format": "webp"
+    },
+    "public/images/webp/icons16.webp": {
+      "width": 128,
+      "height": 16,
+      "icons": [
+        "monitor",
+        "server",
+        "monitor",
+        "laptop",
+        "smartphone",
+        "cpu",
+        "router",
+        "printer"
+      ],
+      "color": "#6d9ff4",
+      "format": "webp"
+    },
+    "public/images/webp/notify24.webp": {
+      "width": 216,
+      "height": 24,
+      "icons": [
+        "circle-check",
+        "circle-x",
+        "triangle-alert",
+        "circle-minus",
+        "info",
+        "circle-help",
+        "shield-alert",
+        "shield-check",
+        "shield-x"
+      ],
+      "color": "#6d9ff4",
+      "format": "webp"
+    },
+    "public/images/webp/leftbar-128.webp": {
+      "width": 768,
+      "height": 128,
+      "icons": [
+        "user-round",
+        "monitor",
+        "list-checks",
+        "folder",
+        "users-round",
+        "server"
+      ],
+      "color": "#6d9ff4",
+      "format": "webp"
+    },
+    "public/images/webp/notify48.webp": {
+      "width": 432,
+      "height": 48,
+      "icons": [
+        "circle-check",
+        "circle-x",
+        "triangle-alert",
+        "circle-minus",
+        "info",
+        "circle-help",
+        "shield-alert",
+        "shield-check",
+        "shield-x"
+      ],
+      "color": "#6d9ff4",
+      "format": "webp"
+    },
+    "public/images/webp/icons100.webp": {
+      "width": 800,
+      "height": 100,
+      "icons": [
+        "monitor",
+        "server",
+        "monitor",
+        "laptop",
+        "smartphone",
+        "cpu",
+        "router",
+        "printer"
+      ],
+      "color": "#6d9ff4",
+      "format": "webp"
+    },
+    "public/images/webp/icons32.webp": {
+      "width": 256,
+      "height": 32,
+      "icons": [
+        "monitor",
+        "server",
+        "monitor",
+        "laptop",
+        "smartphone",
+        "cpu",
+        "router",
+        "printer"
+      ],
+      "color": "#6d9ff4",
+      "format": "webp"
+    },
+    "public/images/mainwelcome.jpg": {
+      "width": 359,
+      "height": 310,
+      "icons": [
+        "network"
+      ],
+      "format": "jpeg",
+      "color": "#6d9ff4",
+      "background": "#182338"
+    },
+    "public/images/webp/mainwelcome.webp": {
+      "width": 359,
+      "height": 310,
+      "icons": [
+        "network"
+      ],
+      "format": "webp",
+      "color": "#6d9ff4",
+      "background": "#182338"
+    },
+    "public/images/server-200.jpg": {
+      "width": 200,
+      "height": 200,
+      "icons": [
+        "server"
+      ],
+      "format": "jpeg",
+      "color": "#6d9ff4",
+      "background": "#182338"
+    },
+    "public/images/leftbar-62.jpg": {
+      "width": 426,
+      "height": 62,
+      "icons": [
+        "user-round",
+        "monitor",
+        "list-checks",
+        "folder",
+        "users-round",
+        "server"
+      ],
+      "format": "jpeg",
+      "color": "#6d9ff4",
+      "background": "#182338"
+    },
+    "public/images/mapmarker.png": {
+      "width": 30,
+      "height": 30,
+      "icons": [
+        "map-pin"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/mapmarker-user.png": {
+      "width": 30,
+      "height": 30,
+      "icons": [
+        "map-pin"
+      ],
+      "color": "#36b887"
+    },
+    "public/images/mapmarker-ip.png": {
+      "width": 30,
+      "height": 30,
+      "icons": [
+        "map-pin"
+      ],
+      "color": "#9b8afb"
+    },
+    "public/images/mapmarker-wifi.png": {
+      "width": 30,
+      "height": 30,
+      "icons": [
+        "map-pin"
+      ],
+      "color": "#e6a23c"
+    },
+    "public/images/mapmarker-gps.png": {
+      "width": 30,
+      "height": 30,
+      "icons": [
+        "map-pin"
+      ],
+      "color": "#36b887"
+    },
+    "public/images/modern/file-file.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "file"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/modern/file-folder.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "folder"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/modern/file-hard-drive.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "hard-drive"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/modern/file-folder-open.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "folder-open"
+      ],
+      "color": "#6d9ff4"
+    },
+    "public/images/modern/file-usb.png": {
+      "width": 16,
+      "height": 16,
+      "icons": [
+        "usb"
+      ],
+      "color": "#6d9ff4"
+    }
+  }
+}

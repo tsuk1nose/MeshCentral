@@ -41,3 +41,10 @@ both themes for classic and Bootstrap templates. Group cards and server metrics
 use their original rendering functions with fixture data; event/user/file rows
 use representative markup. These checks cover horizontal overflow and visual
 layout, not authenticated operations or chart rendering.
+
+
+The icon refresh now uses vendored Lucide Static 1.71.0 rather than custom SVG
+artwork. PNG, WebP, notification/device/navigation sprite sheets, device-detail
+images, remote-control buttons, PWA icons and the actual multi-resolution ICO
+are regenerated from `tools/icon-refresh/manifest.json`. See that directory's
+README for source, license, retained brand assets and regeneration instructions.
